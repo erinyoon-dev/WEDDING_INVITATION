@@ -43,18 +43,27 @@ const Map = styled.div`
 const Location = () => {
   // 카카오 맵 불러오기
 
-  // <!-- 3. 실행 스크립트 -->
   const executeScript = () => {
     const scriptTag = document.createElement("script");
-    const inlineScript = document.createTextNode(`new daum.roughmap.Lander({
-    "timestamp" : "1652464367301",
-    "key" : "2a8fe",
-    "mapWidth" : "640",
-    "mapHeight" : "360"
+    const inlineScript = document.createTextNode(`new google.maps.Map(document.getElementbyId("map"),{
+    center: { lat: 37.559961, lng: 127.043164 },
+    zoom: 10,
   }).render();`);
     scriptTag.appendChild(inlineScript);
     document.body.appendChild(scriptTag);
   };
+  // <!-- 3. 실행 스크립트 -->
+  //const executeScript = () => {
+  //  const scriptTag = document.createElement("script");
+  //  const inlineScript = document.createTextNode(`new daum.roughmap.Lander({
+  //  "timestamp" : "1652464367301",
+  //  "key" : "2a8fe",
+  //  "mapWidth" : "640",
+  //  "mapHeight" : "360"
+  //}).render();`);
+  //  scriptTag.appendChild(inlineScript);
+  //  document.body.appendChild(scriptTag);
+  //};
 
   // <!-- 2. 설치 스크립트 * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다. -->
   // document.write 문제가 발생해서 해당 파일을 직접 가져온다음 수정했음

@@ -31,7 +31,8 @@ const IndexPage = () => {
   useEffect(() => {
     const script = document.createElement("script");
     script.async = true;
-    script.src = "https://developers.kakao.com/sdk/js/kakao.min.js";
+    script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDSqYvUeqdB5m3oqZkbK9BVjWvr3a87j3E&loading=async&callback=initMap&libraries=map,marker";
+    //script.src = "https://developers.kakao.com/sdk/js/kakao.min.js";
     document.body.appendChild(script);
 
     return () => {
@@ -54,7 +55,6 @@ const IndexPage = () => {
       <Gallery />
       <Location />
       <Quote />
-      <CongratulatoryMoney />
       <Share />
       <Footer
         style={{
@@ -64,7 +64,7 @@ const IndexPage = () => {
           textAlign: "center",
         }}
       >
-        Copyright © 2022 Shin Jooyoung
+        Copyright © 2024 Seryeong Yoon
       </Footer>
     </Wrapper>
   );
