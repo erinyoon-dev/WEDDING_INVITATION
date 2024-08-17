@@ -10,7 +10,6 @@ import "../styles/index.css";
 
 import GroovePaper from "../assets/GroovePaper.png";
 import Location from "../components/location";
-import CongratulatoryMoney from "../components/congratulatoryMoney";
 import Share from "../components/share";
 import Quote from "../components/quote";
 import Song from "../assets/song.mp3";
@@ -51,8 +50,8 @@ const IndexPage = () => {
         <source src={Song} />
       </audio>
       <Title />
-      <Greeting />
       <Gallery />
+      <Greeting />
       <Location />
       <Quote />
       <Share />
