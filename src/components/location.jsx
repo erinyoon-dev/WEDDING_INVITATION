@@ -40,20 +40,6 @@ const Map = styled.div`
   padding: 0;
 `;
 
-window.initMap = function() {
-  const map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: 37.559961, lng: 127.043164 },
-    zoom: 10,
-  });
-
-  const weddingHall = { label: "H", name: "H Square", lat: 37.559961, lng: 127.043164 };
-  const marker = new google.maps.Maarker({
-    position: {weddingHall.lat, weddingHall.lng},
-    weddingHall.label,
-    map,
-  });}
-};
-
 const Location = () => {
   window.initMap = function() {
   const map = new google.maps.Map(document.getElementById("map"), {

@@ -55,10 +55,12 @@ const Greeting = () => {
   return (
     <Wrapper>
       <Divider style={{ marginTop: 32, marginBottom: 32 }} plain>
-        <Title data-aos="fade-up">Save The Date</Title>
+        <Title data-aos="fade-up">Wedding Invitation</Title>
       </Divider>
       <Image data-aos="fade-up" src={Flower} />
       <GroomBride data-aos="fade-up">
+	Save the date for the wedding of
+	<br />
         {GROOM_NAME}
         <br />
 	and
