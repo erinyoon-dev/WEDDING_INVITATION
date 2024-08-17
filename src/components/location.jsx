@@ -48,11 +48,12 @@ const Location = () => {
   });
 
   const weddingHall = { label: "H", name: "H Square", lat: 37.559961, lng: 127.043164 };
-  const marker = new google.maps.Maarker({
+  const marker = new google.maps.Marker({
     position: {weddingHall.lat, weddingHall.lng},
     weddingHall.label,
     map,
-  });}
+  });
+  };
   // 카카오 맵 불러오기
 
   // <!-- 3. 실행 스크립트 -->
