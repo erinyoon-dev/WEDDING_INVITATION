@@ -41,13 +41,13 @@ const Map = styled.div`
 `;
 
 const Location = () => {
-  window = {};
-  window.initMap = function() {
-  const map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: 37.559961, lng: 127.043164 },
-    zoom: 10,
-  });
-
+  if (typeof window !== "undefined") {
+    window.initMap = function() {
+    const map = new google.maps.Map(document.getElementById("map"), {
+      center: { lat: 37.559961, lng: 127.043164 },
+      zoom: 10,
+    });
+  }
  // const weddingHall = { label: "H", name: "H Square", lat: 37.559961, lng: 127.043164 };
  // const marker = new google.maps.Marker({
  //   position: {weddingHall.lat, weddingHall.lng},
