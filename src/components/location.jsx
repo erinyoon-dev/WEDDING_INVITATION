@@ -41,6 +41,7 @@ const Map = styled.div`
 `;
 
 const Location = () => {
+  window = {};
   window.initMap = function() {
   const map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: 37.559961, lng: 127.043164 },
