@@ -40,18 +40,35 @@ const Map = styled.div`
   padding: 0;
 `;
 
-const Location = () => {
-  // 카카오 맵 불러오기
-
-  const executeScript = () => {
-    const scriptTag = document.createElement("script");
-    const inlineScript = document.createTextNode(`new google.maps.Map(document.getElementbyId("map"),{
+window.initMap = function() {
+  const map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: 37.559961, lng: 127.043164 },
     zoom: 10,
-  }).render();`);
-    scriptTag.appendChild(inlineScript);
-    document.body.appendChild(scriptTag);
-  };
+  });
+
+  const weddingHall = { label: "H", name: "H Square", lat: 37.559961, lng: 127.043164 };
+  const marker = new google.maps.Maarker({
+    position: {weddingHall.lat, weddingHall.lng},
+    weddingHall.label,
+    map,
+  });}
+};
+
+const Location = () => {
+  window.initMap = function() {
+  const map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: 37.559961, lng: 127.043164 },
+    zoom: 10,
+  });
+
+  const weddingHall = { label: "H", name: "H Square", lat: 37.559961, lng: 127.043164 };
+  const marker = new google.maps.Maarker({
+    position: {weddingHall.lat, weddingHall.lng},
+    weddingHall.label,
+    map,
+  });}
+  // 카카오 맵 불러오기
+
   // <!-- 3. 실행 스크립트 -->
   //const executeScript = () => {
   //  const scriptTag = document.createElement("script");
@@ -65,52 +82,13 @@ const Location = () => {
   //  document.body.appendChild(scriptTag);
   //};
 
-  // <!-- 2. 설치 스크립트 * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다. -->
-  // document.write 문제가 발생해서 해당 파일을 직접 가져온다음 수정했음
-  const InstallScript = () => {
-    (function () {
-      let c = window.location.protocol === "https:" ? "https:" : "http:";
-      let a = "16137cec";
-
-      if (window.daum && window.daum.roughmap && window.daum.roughmap.cdn) {
-        return;
-      }
-      window.daum = window.daum || {};
-      window.daum.roughmap = {
-        cdn: a,
-        URL_KEY_DATA_LOAD_PRE: c + "//t1.daumcdn.net/roughmap/",
-        url_protocal: c,
-      };
-      let b =
-        c +
-        "//t1.daumcdn.net/kakaomapweb/place/jscss/roughmap/" +
-        a +
-        "/roughmapLander.js";
-
-      // document.write -> doumnet.body.append로 수정
-      const scriptTag = document.createElement("script");
-      scriptTag.src = b;
-      document.body.append(scriptTag);
-      scriptTag.onload = () => {
-        executeScript();
-      };
-    })();
-  };
-
-  useEffect(() => {
-    InstallScript();
-  }, [InstallScript]);
-
   return (
     <Wrapper>
       <Divider plain style={{ marginTop: 0, marginBottom: 32 }}>
         <Title>Location</Title>
       </Divider>
       <Image src={Flower} />
-      <Map
-        id="daumRoughmapContainer1652464367301"
-        className="root_daum_roughmap root_daum_roughmap_landing"
-      ></Map>
+      <Map></Map>
       <Content>
 	22-2, Majo-ro, Seongdong-gu,  Seoul
       </Content>
