@@ -101,12 +101,10 @@ const IndexPage = () => {
                 <div><Pin className="icon"/></div>
                 <div>
                   <div className="location"><h4>To be updated</h4></div>
-                  // <!-- <div className="address">To be updated</div> -->
                 </div>
               </div>
               <div className="info-text">
                 <div><Map className="icon"/></div>
-                // <!-- <div className="map"><a href={this.props.mapLink} target="_blank">{this.props.map}</a></div> -->
               </div>
             </div>
           </div>
