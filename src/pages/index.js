@@ -12,9 +12,6 @@ import GroovePaper from "../assets/GroovePaper.png";
 import Song from "../assets/song.mp3";
 import Masia from "../assets/masia.png";
 import Iglesia from "../assets/iglesia.png";
-import Cal from "../assets/cal.svg"
-import Pin from "../assets/pin.svg"
-import Map from "../assets/map.svg"
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -31,17 +28,6 @@ const Wrapper = styled.div`
 `;
 
 const IndexPage = () => {
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.async = true;
-    script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDSqYvUeqdB5m3oqZkbK9BVjWvr3a87j3E&loading=async&callback=initMap&libraries=map,marker";
-    //script.src = "https://developers.kakao.com/sdk/js/kakao.min.js";
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.romoveChile(script);
-    };
-  }, []);
 
   useEffect(() => {
     AOS.init({
@@ -77,17 +63,14 @@ const IndexPage = () => {
             <div className="info-title"><h3>The Ceremony</h3></div>
             <div className="info">
               <div className="info-text">
-                <div ><Cal className="icon" /></div>
                 <div className="time-date">12:30h, Sunday, January 19th, 2025</div></div>
               <div className="info-text">
-                <div><Pin className="icon"/></div>
                 <div>
                   <div className="location"><h4>H Square Wedding Hall</h4></div>
                   <div className="address">22-2, Majo-ro, Seongdong-gu, Seoul</div>
                 </div>
               </div>
               <div className="info-text">
-                <div><Map className="icon"/></div>
                 <div className="map"><a href="https://www.google.com/maps/place/H%EC%8A%A4%ED%80%98%EC%96%B4%EC%9B%A8%EB%94%A9%ED%99%80/data=!3m1!4b1!4m6!3m5!1s0x357ca5d4362571af:0xd64cdd7da9216d29!8m2!3d37.5594167!4d127.0414041!16s%2Fg%2F11rfbzds2j?authuser=0&entry=ttu" target="_blank">Map and directions</a></div>
               </div>
             </div>
