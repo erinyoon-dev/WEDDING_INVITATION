@@ -91,7 +91,7 @@ const images = [
 
 const Gallery = () => {
   return (
-    <Wrapper>
+    <Wrapper stype={{ maxWidth: 1170px, margin: 0 auto }}>
       <Divider style={{ marginTop: 0, marginBottom: 32 }} plain>
       </Divider>
       <ImageGallery
