@@ -12,6 +12,9 @@ import GroovePaper from "../assets/GroovePaper.png";
 import Song from "../assets/song.mp3";
 import Masia from "../assets/masia.png";
 import Iglesia from "../assets/iglesia.png";
+import Cal from "../assets/cal.svg"
+import Pin from "../assets/pin.svg"
+import Map from "../assets/map.svg"
 
 import AOS from "aos";
 import "aos/dist/aos.css";
