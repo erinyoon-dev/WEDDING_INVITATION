@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
-import { Layout } from "antd";
 import styled from "styled-components";
 import "react-image-gallery/styles/css/image-gallery.css";
 import "antd/dist/antd.css";
+
+import Layout from "../components/layout"
 import Gallery from "../components/gallery";
-import Share from "../components/share";
 import Quote from "../components/quote";
 import "../components/layout.css";
 
@@ -21,15 +21,6 @@ import "aos/dist/aos.css";
 import "../components/hero.css";
 import "../components/event.css";
 import "../components/divider.css";
-
-// markup
-const { Footer } = Layout;
-
-const Wrapper = styled.div`
-  background: #ffffff;
-  background-image: url(${GroovePaper});
-  width: 100%;
-`;
 
 const Header = styled.div`
   width: 100%;
@@ -49,7 +40,7 @@ const IndexPage = () => {
     });
   });
   return (
-    <Wrapper>
+    <Layout>
       <audio autoPlay loop>
         <source src={Song} />
       </audio>
@@ -122,18 +113,7 @@ const IndexPage = () => {
           </div>
         </div>
       </div>
-      <Share />
-      <Footer
-        style={{
-          background: "#D7CCC8",
-          backgroundImage: `url(${GroovePaper})`,
-          opacity: 0.6,
-          textAlign: "center",
-        }}
-      >
-        Copyright © 2024 Seryeong Yoon
-      </Footer>
-    </Wrapper>
+    </Layout>
   );
 };
 
