@@ -54,7 +54,7 @@ const IndexPage = () => {
         <source src={Song} />
       </audio>
       <Header>
-        <br>
+        <br />
           <h1 className="divider-text">SAVE THE DATE!</h1>
           <div className="event-description">for the wedding of</div>
       </Header>
