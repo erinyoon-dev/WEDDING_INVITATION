@@ -13,6 +13,13 @@
   margin-top: 1rem;
 }
 
+h1.divider-text {
+  font-family: 'silk_serifbold';
+  margin: 0;
+  margin-top: 1rem;
+  color: #FFB7CE;
+}
+
 .divider-icon {
   color: #434142;
   cursor: pointer;
