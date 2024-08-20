@@ -59,7 +59,7 @@ const IndexPage = () => {
     // Divider
       <div className="divider">
         <h2 className="divider-text">THE EVENT</h2>
-        <button className="divider-icon"><a href="#evento"><img src={ArrowDown}></img></a></button>
+        <div className="divider-icon"><img src={ArrowDown}></img></div>
       </div>
     // Event
       <div id="evento">
