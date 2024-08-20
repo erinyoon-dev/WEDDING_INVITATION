@@ -26,7 +26,7 @@ import "../components/divider.css";
 const { Footer } = Layout;
 
 const Wrapper = styled.div`
-  background: #efebe9;
+  background: #ffffff;
   background-image: url(${GroovePaper});
   width: 100%;
 `;
@@ -85,7 +85,7 @@ const IndexPage = () => {
           </div>
         </div>
       </div>
-      <div id="evento2">
+      <div id="evento">
        <div className="event-content">
           <div className="event-media"><img className="event-image" src={Masia}></img></div>
           <div className="event-details">
