@@ -20,7 +20,7 @@ import GalleryPhoto12 from "../assets/images_12.jpeg";
 
 const Wrapper = styled.div`
   padding-top: 42px;
-  width: 60%;
+  height: 60%;
   object-fit: contain;
   margin: 0 auto;
 `;
