@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import React, { useEffect } from "react";
 import { Layout } from "antd";
 import styled from "styled-components";
@@ -15,11 +16,13 @@ import Iglesia from "../assets/iglesia.png";
 import Cal from "../assets/cal.png";
 import Pin from "../assets/pin.png";
 import Map from "../assets/map.png";
+import ArrowDown from "../assets/arrow-down.png";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "../components/hero.css";
 import "../components/event.css";
+import "../components/divider.css";
 
 // markup
 const { Footer } = Layout;
@@ -53,6 +56,11 @@ const IndexPage = () => {
             19 January 2025
           </div>
         </div>
+      </div>
+    // Divider
+      <div className="divider">
+        <h2 className="divider-text">THE EVENT</h2>
+        <button className="divider-icon"><Link to="#evento"><ArrowDown /></Link></button>
       </div>
     // Event
       <div id="evento">
