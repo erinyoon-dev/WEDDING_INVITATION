@@ -1,4 +1,3 @@
-import { Link } from "gatsby";
 import React, { useEffect } from "react";
 import { Layout } from "antd";
 import styled from "styled-components";
@@ -60,7 +59,7 @@ const IndexPage = () => {
     // Divider
       <div className="divider">
         <h2 className="divider-text">THE EVENT</h2>
-        <button className="divider-icon"><Link to="#evento"><ArrowDown /></Link></button>
+        <button className="divider-icon"><a href="#evento"><ArrowDown /></Link></button>
       </div>
     // Event
       <div id="evento">
