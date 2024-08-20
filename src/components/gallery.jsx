@@ -20,9 +20,9 @@ import GalleryPhoto12 from "../assets/images_12.jpeg";
 
 const Wrapper = styled.div`
   padding-top: 42px;
-  height: 60%;
+  max-width: 45vw;
   object-fit: contain;
-  margin: 0 auto;
+  margin: 2rem;
 `;
 
 const Title = styled.p`
