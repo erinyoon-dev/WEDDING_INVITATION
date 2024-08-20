@@ -59,9 +59,6 @@ const IndexPage = () => {
           <h1 className="divider-text">SAVE THE DATE!</h1>
           <div className="event-description">for the wedding of</div>
         </div>
-        <div className="header-brand">
-          <a href="/"><img className="header-logo" src={Flower}/></a>
-        </div>
       </Header>
       <div className="hero">
         <div className="hero-content">
