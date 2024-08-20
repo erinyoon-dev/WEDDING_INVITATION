@@ -5,20 +5,12 @@ import { Layout } from "antd";
 
 // markup
 const { Footer } = Layout;
+import GroovePaper from "../assets/GroovePaper.png";
 
 import Share from "./share";
 import "./layout.css"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
 
   return (
     <>
