@@ -6,6 +6,7 @@ import "antd/dist/antd.css";
 import Gallery from "../components/gallery";
 import Share from "../components/share";
 import Quote from "../components/quote";
+import "../components/layout.css";
 
 import GroovePaper from "../assets/GroovePaper.png";
 import Song from "../assets/song.mp3";
