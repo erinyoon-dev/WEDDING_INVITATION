@@ -16,6 +16,7 @@ import Song from "../assets/song.mp3";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "../components/hero.css";
 
 // markup
 const { Footer } = Layout;
@@ -49,8 +50,18 @@ const IndexPage = () => {
       <audio autoPlay loop>
         <source src={Song} />
       </audio>
+      <div className="hero">
+        <div className="hero-content">
+          <div className="hero-text">
+            Junho Kwon and Seryong Yoon
+          </div>
+          <Gallery />
+          <div className="hero-text">
+            19 January 2025
+          </div>
+        </div>
+      </div>
       <Title />
-      <Gallery />
       <Greeting />
       <Location />
       <Share />
