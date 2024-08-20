@@ -59,7 +59,6 @@ const IndexPage = () => {
     // Divider
       <div className="divider">
         <h2 className="divider-text">THE EVENT</h2>
-        <div className="divider-icon"><img src={ArrowDown}></img></div>
       </div>
     // Event
       <div id="evento">
