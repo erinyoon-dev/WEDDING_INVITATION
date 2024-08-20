@@ -86,7 +86,7 @@ const IndexPage = () => {
           </div>
         </div>
       </div>
-      <div id="evento">
+      <div id="evento2">
        <div className="event-content">
           <div className="event-media"><img className="event-image" src={Masia}></img></div>
           <div className="event-details">
