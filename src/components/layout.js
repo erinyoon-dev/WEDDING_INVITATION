@@ -1,6 +1,10 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { Link } from "antd";
+
+// markup
+const { Footer } = Link;
 
 import Share from "./share";
 import "./layout.css"
