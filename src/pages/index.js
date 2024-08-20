@@ -14,8 +14,6 @@ import Iglesia from "../assets/iglesia.png";
 import Cal from "../assets/cal.png";
 import Pin from "../assets/pin.png";
 import Map from "../assets/map.png";
-import ArrowDown from "../assets/arrow-down.png";
-import Flower from "../assets/flower2.png";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -55,10 +53,9 @@ const IndexPage = () => {
         <source src={Song} />
       </audio>
       <Header>
-        <div className="divider">
+        <br>
           <h1 className="divider-text">SAVE THE DATE!</h1>
           <div className="event-description">for the wedding of</div>
-        </div>
       </Header>
       <div className="hero">
         <div className="hero-content">
