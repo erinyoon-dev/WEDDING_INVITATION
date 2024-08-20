@@ -15,6 +15,7 @@ import Cal from "../assets/cal.png";
 import Pin from "../assets/pin.png";
 import Map from "../assets/map.png";
 import ArrowDown from "../assets/arrow-down.png";
+import Flower from "../assets/flower2.png";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -31,6 +32,13 @@ const Wrapper = styled.div`
   width: 100%;
 `;
 
+const Header = styled.div`
+  width: 100%;
+  max-width: 100vw;
+  margin: 0 auto;
+  margin-top: 0.3rem;
+`;
+
 const IndexPage = () => {
 
   useEffect(() => {
@@ -43,6 +51,11 @@ const IndexPage = () => {
       <audio autoPlay loop>
         <source src={Song} />
       </audio>
+      <Header>
+        <div className="header-brand">
+          <a href="/"><img className="header-logo" src={Flower}/></a>
+        </div>
+      </Header>
       <div className="hero">
         <div className="hero-content">
           <div className="hero-text">
@@ -71,8 +84,8 @@ const IndexPage = () => {
                 <div ><img className="icon" src={Cal}/></div>
                 <div className="time-date">12:30h, Sunday, January 19th, 2025</div></div>
               <div className="info-text">
+                <div><img className="icon" src={Pin}/></div>
                 <div>
-                  <div><img className="icon" src={Pin}/></div>
                   <div className="location"><h4>H Square Wedding Hall</h4></div>
                   <div className="address">22-2, Majo-ro, Seongdong-gu, Seoul</div>
                 </div>
