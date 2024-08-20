@@ -21,6 +21,7 @@ import GalleryPhoto12 from "../assets/images_12.jpeg";
 const Wrapper = styled.div`
   padding-top: 42px;
   max-width: 45vw;
+  justify-content: center;
   object-fit: contain;
   margin: 2rem;
 `;
