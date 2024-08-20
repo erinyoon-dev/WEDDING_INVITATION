@@ -10,9 +10,9 @@ import Quote from "../components/quote";
 import "../styles/index.css";
 
 import GroovePaper from "../assets/GroovePaper.png";
-import Cal from "../components/assets/cal.svg";
-import Pin from "../components/assets/pin.svg";
-import Map from "../components/assets/map.svg";
+import Cal from "../assets/cal.svg";
+import Pin from "../assets/pin.svg";
+import Map from "../assets/map.svg";
 import Song from "../assets/song.mp3";
 
 import AOS from "aos";
