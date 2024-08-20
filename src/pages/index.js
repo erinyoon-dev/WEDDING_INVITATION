@@ -34,7 +34,10 @@ const Wrapper = styled.div`
 
 const Header = styled.div`
   width: 100%;
+  background-color: #EDEFED;
   max-width: 100vw;
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
   margin-top: 0.3rem;
 `;
@@ -52,6 +55,10 @@ const IndexPage = () => {
         <source src={Song} />
       </audio>
       <Header>
+        <div className="divider">
+          <h1 className="divider-text">SAVE THE DATE!</h1>
+          <div className="event-description">for the wedding of</div>
+        </div>
         <div className="header-brand">
           <a href="/"><img className="header-logo" src={Flower}/></a>
         </div>
@@ -59,7 +66,7 @@ const IndexPage = () => {
       <div className="hero">
         <div className="hero-content">
           <div className="hero-text">
-            Junho Kwon and Seryong Yoon
+            Junho Kwon & Seryong Yoon
           </div>
           <Gallery />
           <div className="hero-text">
