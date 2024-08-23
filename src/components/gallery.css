@@ -1,7 +1,8 @@
 .image-gallery {
     width: 60vmax;
     height: 60vmin;
-    margin: 10vmin auto;
+    margin-top: 5vmin;
+    margin-bottom: 5vmin;
     objcet-position: center center;
     justify-content: center;
     object-fit: contain;
