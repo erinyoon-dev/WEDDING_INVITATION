@@ -72,26 +72,14 @@ const images = [
   },
 ];
 
-const Wrapper = styled.div`
-  width: 600px;
-  height: 400px;
-  justify-content: center;
-  align-item: center;
-  object-fit: contain;
-  margin: 2rem;
-`;
-
-
 const Gallery = () => {
   return (
-    <Wrapper>
       <ImageGallery
         showPlayButton={false}
         showFullscreenButton={false}
         items={images}
         showThumbnails={false}
       />
-    </Wrapper>
   );
 };
 
