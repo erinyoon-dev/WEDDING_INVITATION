@@ -1,6 +1,6 @@
 .image-gallery {
-    width: 600px;
-    height: 400px;
+    width: 60vmax;
+    max-height: 60vmin;
     margin-top: 5vmin;
     margin-bottom: 5vmin;
     objcet-position: center center;
