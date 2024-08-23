@@ -13,3 +13,9 @@
     height: 400px;
     margin: 0 auto;
 }
+
+.image-gallery-slide {
+    height: 300px; /* Set your desired uniform height */
+    width: auto;   /* Maintain the aspect ratio */
+    object-fit: cover; /* Ensure the image covers the area */
+}
