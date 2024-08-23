@@ -10,7 +10,7 @@ import GroovePaper from "../assets/GroovePaper.png";
 import Share from "./share";
 import "./layout.css"
 
-const Layout = ({ children }) => {
+const Layout2 = ({ children }) => {
 
   return (
     <>
@@ -32,8 +32,8 @@ const Layout = ({ children }) => {
   )
 }
 
-Layout.propTypes = {
+Layout2.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default Layout
+export default Layout2
