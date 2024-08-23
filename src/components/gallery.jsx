@@ -2,7 +2,6 @@ import React from "react";
 import ImageGallery from "react-image-gallery";
 import styled from "styled-components";
 import "./gallery.css";
-import "./hero.css";
 
 import GalleryPhoto0 from "../assets/images_00.jpeg";
 import GalleryPhoto1 from "../assets/images_01.jpeg";
@@ -86,7 +85,7 @@ const Wrapper = styled.div`
 const Gallery = () => {
   return (
     <Wrapper>
-      <ImageGallery className="hero-cover"
+      <ImageGallery
         showPlayButton={false}
         showFullscreenButton={false}
         items={images}
