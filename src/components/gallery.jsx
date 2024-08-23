@@ -17,15 +17,6 @@ import GalleryPhoto10 from "../assets/images_10.jpeg";
 import GalleryPhoto11 from "../assets/images_11.jpeg";
 import GalleryPhoto12 from "../assets/images_12.jpeg";
 
-const Wrapper = styled.div`
-  padding-top: 42px;
-  max-width: 60vw;
-  justify-content: center;
-  align-item: center;
-  object-fit: contain;
-  margin: 2rem;
-`;
-
 const images = [
   {
     original: GalleryPhoto0,
@@ -83,14 +74,12 @@ const images = [
 
 const Gallery = () => {
   return (
-    <Wrapper>
-      <ImageGallery
+    <ImageGallery
       showPlayButton={false}
       showFullscreenButton={false}
       items={images}
       showThumbnails={false}
-      />
-    </Wrapper>
+    />
   );
 };
 
