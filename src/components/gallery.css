@@ -1,15 +1,9 @@
 .image-gallery {
     width: 60vmax;
-    height: 60vmin;
-    max-height: 800px;
+    max-height: 400px;
     margin-top: 5vmin;
     margin-bottom: 5vmin;
     objcet-position: center center;
     justify-content: center;
     object-fit: contain;
-}
-
-.image-gallery-wrapper {
-  height: 100%;
-  margin: 0 auto;
 }
