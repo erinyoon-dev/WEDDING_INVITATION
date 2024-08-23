@@ -8,11 +8,6 @@
     object-fit: contain;
 }
 
-.image-gallery-content {
-    width: 60vmax;
-    height: 10vmin;
-}
-
 .image-gallery-wrapper {
     width: 600px;
     height: 400px;
