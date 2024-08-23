@@ -96,6 +96,7 @@ const Gallery = () => {
         showPlayButton={false}
         showFullscreenButton={false}
         items={images}
+        showThumbnails={false}
       />
     </Wrapper>
   );
