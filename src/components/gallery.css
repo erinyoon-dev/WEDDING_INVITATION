@@ -4,10 +4,9 @@
     objcet-position: center center;
 }
 
-.image-gallery-slide img {
-    width: auto;
-    max-height: 60%;
-    object-fit: contain;
-    overflow: hidden;
-    object-position: center center;
+.image-gallery-wrapper {
+  margin-top: 5rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
 }
