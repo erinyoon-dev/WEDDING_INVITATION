@@ -27,6 +27,7 @@ const Header = styled.div`
   background-color: #EDEFED;
   max-width: 100vw;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin: 0 auto;
   margin-top: 0.3rem;
