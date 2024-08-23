@@ -19,6 +19,10 @@ import GalleryPhoto12 from "../assets/images_12.jpeg";
 
 const images = [
   {
+    original: GalleryPhoto12,
+    thumbnail: GalleryPhoto12,
+  },
+  {
     original: GalleryPhoto0,
     thumbnail: GalleryPhoto0,
   },
@@ -65,10 +69,6 @@ const images = [
   {
     original: GalleryPhoto11,
     thumbnail: GalleryPhoto11,
-  },
-  {
-    original: GalleryPhoto12,
-    thumbnail: GalleryPhoto12,
   },
 ];
 
