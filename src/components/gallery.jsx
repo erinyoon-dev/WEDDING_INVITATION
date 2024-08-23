@@ -17,13 +17,13 @@ import GalleryPhoto10 from "../assets/images_10.jpeg";
 import GalleryPhoto11 from "../assets/images_11.jpeg";
 import GalleryPhoto12 from "../assets/images_12.jpeg";
 
-const Title = styled.p`
-  font-size: 1rem;
-  color: var(--title-color);
-  font-weight: bold;
-  opacity: 0.85;
-  margin-bottom: 0;
-  text-align: center;
+const Wrapper = styled.div`
+  padding-top: 42px;
+  max-width: 60vw;
+  justify-content: center;
+  align-item: center;
+  object-fit: contain;
+  margin: 2rem;
 `;
 
 const images = [
@@ -83,12 +83,14 @@ const images = [
 
 const Gallery = () => {
   return (
-    <ImageGallery
+    <Wrapper>
+      <ImageGallery
       showPlayButton={false}
       showFullscreenButton={false}
       items={images}
       showThumbnails={false}
-    />
+      />
+    </Wrapper>
   );
 };
 
