@@ -1,6 +1,5 @@
 import React from "react";
 import ImageGallery from "react-image-gallery";
-import { Divider } from "antd";
 import styled from "styled-components";
 import "./gallery.css";
 
@@ -93,8 +92,6 @@ const images = [
 const Gallery = () => {
   return (
     <Wrapper>
-      <Divider style={{ marginTop: 0, marginBottom: 32 }} plain>
-      </Divider>
       <ImageGallery
         showPlayButton={false}
         showFullscreenButton={false}
